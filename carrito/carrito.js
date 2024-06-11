@@ -118,7 +118,7 @@ const showHTML = () => {
                 <span class="cantidad-producto-carrito">${product.quantity}x</span>
                 <p class="titulo-producto-carrito">${product.title}</p>
                 <span class="precio-producto-carrito">${product.price}</span>
-                <img src="C:\\Users\\agus\\Desktop\\proyecto\\img\\basurero.png" alt="basurero" class="icon-trash">
+                <img src="..\\img\\basurero.png" alt="basurero" class="icon-trash">
             </div>
         `;
 
