@@ -1,0 +1,470 @@
+body {
+    font-family: 'Bodoni Moda', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Resto de tu CSS */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000C15;
+}
+
+.logo img {
+    height: 100px;
+    width: 120px;
+    position:relative;
+    left: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    top: 15px;
+    right: 70px;
+}
+
+nav ul li {
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-image.png') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero::after {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero-section {
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    margin-top: 0; /* Optional */
+  }
+  
+  .hero-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 40px 20px; /* Adjust bottom padding if needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.hero-image {
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 10; /* Slightly see-through to enhance the text on top */
+}
+
+.hero-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #000C15;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.stat h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.stat p {
+    font-size: 1em;
+}
+
+.popular-products {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.popular-products h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #000;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #000;
+}
+
+.product-info p {
+    font-size: 1.2em;
+    color: #28a745;
+}
+
+.quienes-somos {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.quienes-somos img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.quienes-somos .content {
+    width: 50%;
+}
+
+.quienes-somos .content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.quienes-somos .content p {
+    font-size: 1.2em;
+}
+
+.holistic-plan {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.holistic-plan .content {
+    margin-bottom: 40px;
+}
+
+.holistic-plan .content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.holistic-plan .content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.holistic-plan .content img {
+    width: 100px;
+    height: auto;
+}
+
+.vertical-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.vertical-stats .stat {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: left;
+}
+
+.vertical-stats .stat h3 {
+    font-size: 2em;
+    margin: 0;
+    color: #28a745;
+}
+
+.vertical-stats .stat p {
+    font-size: 1em;
+    margin: 10px 0 0;
+    color: #333;
+}
+
+.contact-us {
+    padding: 50px 20px;
+    background-color: #000C15;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.contact-us img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: #000C15;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.contact-form label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-form label input {
+    margin-right: 10px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 350px;
+    background-color: #000C15;
+    color: #fff;
+}
+
+.footer-top .logo {
+    width: 30%;
+}
+
+.footer-top .logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-top .logo p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.footer-top .logo button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1em;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.footer-links h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.Company{
+    right: 400px;
+    position:relative;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    right:400px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #000C15;
+    color: #fff;
+}
+
+.footer-bottom .social-icons {
+    margin-top: 10px;
+}
+
+.footer-bottom .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-bottom .social-icons img {
+    width: 30px;
+    height: auto;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 600px; /* Adjust based on your preference */
+    position:relative;
+    left: 250px;
+}
+
+.info-section {
+    flex: 1;
+    padding-left: 600px;
+}
+
+.statistics .stat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.hero-text-image {
+    position: absolute;
+    top: 50%;  /* Ajusta según sea necesario */
+    left: 50%; /* Ajusta según sea necesario */
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Asegúrate de que esté sobre otros elementos */
+}
